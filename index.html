@@ -3,70 +3,364 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DarkPhone</title>
+    <title>iPhone Store — Купити iPhone</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<header>
-    <div class="logo">🍎 DarkPhone</div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <a href="#" class="logo">iPhone<span>Store</span></a>
 
-    <nav>
-        <a href="#">Головна</a>
-        <a href="#">Каталог</a>
-        <a href="#">Новинки</a>
-        <a href="#">Акції</a>
-        <a href="#">Контакти</a>
-    </nav>
+            <nav class="menu">
+                <a href="#catalog">Каталог</a>
+                <a href="#advantages">Переваги</a>
+                <a href="#about">Про нас</a>
+                <a href="#contacts">Контакти</a>
+            </nav>
 
-    <button class="login">Увійти</button>
-</header>
+            <a href="#catalog" class="nav-button">Купити</a>
+        </div>
+    </header>
 
-<section class="hero">
-    <div class="left">
-        <h1>iPhone 16 Pro</h1>
-        <p>Нове покоління швидкості та дизайну.</p>
-        <button>Замовити</button>
-    </div>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">НОВА КОЛЕКЦІЯ</span>
 
-    <div class="right">
-        <img src="images/iphone16pro.png" alt="iPhone">
-    </div>
-</section>
+                <h1>
+                    Твій новий
+                    <span>iPhone.</span>
+                </h1>
 
-<h2 class="title">Популярні моделі</h2>
+                <p>
+                    Оригінальні iPhone за вигідними цінами.
+                    Швидка доставка по Україні та гарантія.
+                </p>
 
-<section class="cards">
+                <div class="hero-buttons">
+                    <a href="#catalog" class="button primary">
+                        Переглянути iPhone
+                    </a>
 
-    <div class="card">
-        <img src="images/iphone16pro.png">
-        <h3>iPhone 16 Pro</h3>
-        <p>256 GB</p>
-        <h4>54 999 грн</h4>
-        <button>Купити</button>
-    </div>
+                    <a href="#advantages" class="button secondary">
+                        Чому ми?
+                    </a>
+                </div>
+            </div>
 
-    <div class="card">
-        <img src="images/iphone16.png">
-        <h3>iPhone 16</h3>
-        <p>128 GB</p>
-        <h4>42 999 грн</h4>
-        <button>Купити</button>
-    </div>
+            <div class="hero-image">
+                <div class="image-glow"></div>
+                <img
+                    src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=900&q=90"
+                    alt="Сучасний смартфон"
+                >
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-        <img src="images/iphone15.png">
-        <h3>iPhone 15</h3>
-        <p>128 GB</p>
-        <h4>35 999 грн</h4>
-        <button>Купити</button>
-    </div>
+    <!-- Features -->
+    <section class="features" id="advantages">
+        <div class="container features-grid">
 
-</section>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <div>
+                    <h3>100% оригінал</h3>
+                    <p>Тільки оригінальна техніка Apple</p>
+                </div>
+            </div>
 
-<footer>
-    <p>© 2026 DarkPhone</p>
-</footer>
+            <div class="feature">
+                <div class="feature-icon">🚚</div>
+                <div>
+                    <h3>Швидка доставка</h3>
+                    <p>Відправка по Україні від 1 дня</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🛡</div>
+                <div>
+                    <h3>Гарантія</h3>
+                    <p>Офіційна гарантія на техніку</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Catalog -->
+    <section class="catalog" id="catalog">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">КАТАЛОГ</span>
+                    <h2>Обери свій iPhone</h2>
+                </div>
+
+                <p>
+                    Популярні моделі Apple<br>
+                    в наявності
+                </p>
+            </div>
+
+            <div class="products">
+
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">ХІТ</span>
+                        <img
+                            src="https://applefun.com.ua/upload/2023-09/0-rOrQu7PBPg7TPI91694681682.webp"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-type">PRO SERIES</span>
+                        <h3>iPhone 15 Pro</h3>
+
+                        <p class="description">
+                            Титановий корпус · A17 Pro · Pro камера
+                        </p>
+
+                        <div class="colors">
+                            <span class="color black"></span>
+                            <span class="color blue"></span>
+                            <span class="color titanium"></span>
+                        </div>
+
+                        <div class="product-bottom">
+                            <div>
+                                <span class="old-price">42 999 ₴</span>
+                                <strong>39 999 ₴</strong>
+                            </div>
+
+                            <a href="#contacts" class="buy-button">
+                                Купити
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag new">НОВИНКА</span>
+                        <img
+                            src="https://apiua.icoola.ua/aimeos/images/products/apple-iphone-15-pro-max-256gb-white-titanium_1746712017/1746712017_1119728264_681cb5d16218a_apple-iphone-15-pro-max-256gb-white-titanium.webp"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-type">PRO MAX</span>
+                        <h3>iPhone 15 Pro Max</h3>
+
+                        <p class="description">
+                            6.7″ дисплей · A17 Pro · 5x Zoom
+                        </p>
+
+                        <div class="colors">
+                            <span class="color black"></span>
+                            <span class="color titanium"></span>
+                            <span class="color white"></span>
+                        </div>
+
+                        <div class="product-bottom">
+                            <div>
+                                <span class="old-price">49 999 ₴</span>
+                                <strong>46 999 ₴</strong>
+                            </div>
+
+                            <a href="#contacts" class="buy-button">
+                                Купити
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">ХІТ</span>
+                        <img
+                            src="https://i.citrus.world/imgcache/size_800/uploads/shop/1/6/1699438905-728956-1.webp"
+                            alt="iPhone"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <h3>iPhone 15</h3>
+
+                        <p class="description">
+                            6.1″ Super Retina XDR · USB-C · 48 MP
+                        </p>
+
+                        <div class="colors">
+                            <span class="color blue"></span>
+                            <span class="color pink"></span>
+                            <span class="color white"></span>
+                        </div>
+
+                        <div class="product-bottom">
+                            <div>
+                                <span class="old-price">34 999 ₴</span>
+                                <strong>31 999 ₴</strong>
+                            </div>
+
+                            <a href="#contacts" class="buy-button">
+                                Купити
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+               <article class="product-card">
+                   <div class="product-image">
+                    <span class="product-tag new">НОВИНКА</span>
+                       <img
+                           src="https://cdn.new-brz.net/app/public/models/MQ1M3SX-A/large/w/230120150021556942.webp"
+                           alt="iPhone"
+                       >
+                   </div>
+            
+                   <div class="product-info">
+                       <span class="product-type">xit
+                       </span>
+                       <h3>iPhone 14 pro</h3>
+            
+                       <p class="description">
+                           6.1″ Super Retina XDR · USB-C · 48 MP
+                       </p>
+            
+                       <div class="colors">
+                           <span class="color blue"></span>
+                           <span class="color pink"></span>
+                           <span class="color white"></span>
+                       </div>
+            
+                       <div class="product-bottom">
+                           <div>
+                               <span class="old-price">36 999 ₴</span>
+                               <strong>34 999 ₴</strong>
+                           </div>
+            
+                           <a href="#contacts" class="buy-button">
+                               Купити
+                           </a>
+                       </div>
+                   </div>
+               </article>
+            </div>
+        </div>
+    </section>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo -->
+    <section class="promo">
+        <div class="container promo-content">
+
+            <div>
+                <span class="section-label">СПЕЦІАЛЬНА ПРОПОЗИЦІЯ</span>
+
+                <h2>
+                    iPhone + чохол
+                    <span>у подарунок</span>
+                </h2>
+
+                <p>
+                    Замовляй iPhone цього місяця та отримуй
+                    стильний захисний чохол у подарунок.
+                </p>
+
+                <a href="#contacts" class="button primary">
+                    Отримати пропозицію
+                </a>
+            </div>
+
+            <div class="promo-phone">
+                <img
+                    src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=90"
+                    alt="iPhone"
+                >
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+
+            <div>
+                <span class="section-label">ПРО НАС</span>
+                <h2>Техніка, якій можна довіряти.</h2>
+            </div>
+
+            <div class="about-text">
+                <p>
+                    iPhoneStore — магазин оригінальної техніки Apple.
+                    Ми допомагаємо підібрати iPhone під ваші потреби
+                    та бюджет.
+                </p>
+
+                <p>
+                    Перед продажем кожен пристрій проходить перевірку.
+                    Ми цінуємо чесність, якість та швидке обслуговування.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contacts">
+        <div class="container contact-box">
+
+            <div>
+                <span class="section-label">Є ЗАПИТАННЯ?</span>
+                <h2>Зв'яжись з нами</h2>
+                <p>
+                    Наш менеджер допоможе обрати потрібну модель
+                    та відповість на всі запитання.
+                </p>
+            </div>
+
+            <div class="contact-links">
+                <a href="tel:+380991234567">📞 +38 (099) 123-45-67</a>
+                <a href="mailto:hello@iphonestore.ua">
+                    ✉ hello@iphonestore.ua
+                </a>
+                <a href="https://t.me/" target="_blank">
+                    Telegram →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#" class="logo">iPhone<span>Store</span></a>
+
+            <p>© 2026 iPhoneStore. Усі права захищені.</p>
+
+            <div class="footer-links">
+                <a href="#catalog">Каталог</a>
+                <a href="#about">Про нас</a>
+                <a href="#contacts">Контакти</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
